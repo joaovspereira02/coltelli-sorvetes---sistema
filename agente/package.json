@@ -1,0 +1,14 @@
+{
+  "name": "agente-coltelli",
+  "version": "1.0.0",
+  "description": "Agente local da sorveteria Coltelli: balança serial, cobrança na maquininha e página de acompanhamento do pedido",
+  "private": true,
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "optionalDependencies": {
+    "serialport": "^12.0.0"
+  },
+  "engines": { "node": ">=18" }
+}

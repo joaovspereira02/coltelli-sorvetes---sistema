@@ -1,0 +1,12 @@
+{
+  "name": "coltelli-sistema",
+  "version": "1.0.0",
+  "description": "Sistema da sorveteria Coltelli: balcão, produção, totem, painel de senhas, mesas por QR e gestão",
+  "private": true,
+  "scripts": {
+    "dev": "node agente/servidor.js",
+    "start": "node agente/servidor.js",
+    "balanca": "npm install serialport --prefix agente"
+  },
+  "engines": { "node": ">=18" }
+}

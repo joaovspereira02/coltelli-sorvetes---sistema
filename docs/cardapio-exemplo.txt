@@ -1,0 +1,52 @@
+Sorvete a granel ; 59,90 ; Por peso ; kg
+Açaí a granel ; 64,90 ; Por peso ; kg
+
+Casquinha 1 bola ; 10,00 ; Casquinhas
+Casquinha 2 bolas ; 14,00 ; Casquinhas
+Casquinha 3 bolas ; 18,00 ; Casquinhas
+Cascão 1 bola ; 12,00 ; Casquinhas
+Cascão 2 bolas ; 16,00 ; Casquinhas
+Cascão trufado ; 19,00 ; Casquinhas
+Copinho 150 ml ; 9,00 ; Casquinhas
+Copinho 200 ml ; 12,00 ; Casquinhas
+
+Picolé de coco ; 6,00 ; Picolés
+Picolé de limão ; 6,00 ; Picolés
+Picolé de maracujá ; 6,00 ; Picolés
+Picolé de morango ; 6,00 ; Picolés
+Picolé de uva ; 6,00 ; Picolés
+Picolé chocolate ao leite ; 8,00 ; Picolés
+Picolé creme ; 8,00 ; Picolés
+Picolé morango ao leite ; 8,00 ; Picolés
+Picolé leite condensado ; 8,50 ; Picolés
+Picolé ninho com Nutella ; 11,00 ; Picolés
+Picolé trufado de chocolate ; 11,00 ; Picolés
+Picolé de paçoca ; 9,00 ; Picolés
+
+Pote 500 g ; 32,00 ; Potes
+Pote 1 kg ; 58,00 ; Potes
+Pote 2 kg ; 105,00 ; Potes
+Pote de açaí 500 g ; 35,00 ; Potes
+
+Taça Coltelli ; 26,00 ; Taças e shakes
+Banana split ; 24,00 ; Taças e shakes
+Sundae de chocolate ; 17,00 ; Taças e shakes
+Sundae de caramelo ; 17,00 ; Taças e shakes
+Açaí na tigela 300 ml ; 22,00 ; Taças e shakes
+Açaí na tigela 500 ml ; 30,00 ; Taças e shakes
+Milkshake 300 ml ; 16,00 ; Taças e shakes
+Milkshake 400 ml ; 20,00 ; Taças e shakes
+Milkshake 500 ml ; 24,00 ; Taças e shakes
+
+Água mineral 500 ml ; 4,00 ; Bebidas
+Refrigerante lata ; 7,00 ; Bebidas
+Suco de laranja 300 ml ; 9,00 ; Bebidas
+Café expresso ; 6,00 ; Bebidas
+Cappuccino ; 9,00 ; Bebidas
+
+Cobertura ; 3,00 ; Adicionais
+Granulado ; 3,00 ; Adicionais
+Paçoca ; 3,00 ; Adicionais
+Leite em pó ; 4,00 ; Adicionais
+Nutella ; 7,00 ; Adicionais
+Bala de goma ; 3,00 ; Adicionais

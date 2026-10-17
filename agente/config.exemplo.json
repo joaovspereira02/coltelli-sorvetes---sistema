@@ -1,0 +1,28 @@
+{
+  "porta": 8899,
+  "mesas": 0,
+
+  "balanca": {
+    "porta": "/dev/tty.usbserial-1420",
+    "baud": 9600,
+    "dataBits": 8,
+    "stopBits": 1,
+    "parity": "none",
+    "protocolo": "generico",
+    "taraG": 0
+  },
+
+  "pagamento": {
+    "provedor": "manual",
+    "token": "",
+    "deviceId": ""
+  },
+
+  "impressora": {
+    "modo": "nenhuma",
+    "host": "192.168.0.50",
+    "porta": 9100,
+    "caminho": "/dev/usb/lp0",
+    "colunas": 42
+  }
+}

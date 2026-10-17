@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+<title>Coltelli Operação</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Lobster+Two:ital,wght@1,700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-marca" viewBox="0 0 24 24"><path d="M7.8 11.4 12 21.4l4.2-10"/><path d="M6.5 11.4h11"/><circle cx="9.6" cy="8.2" r="2.8"/><circle cx="14.4" cy="8.2" r="2.8"/></symbol>
+  <symbol id="i-comanda" viewBox="0 0 24 24"><path d="M6 3h12v18l-2.5-1.6L13 21l-2.5-1.6L8 21l-2-1.3V3z"/><path d="M9 8h6M9 12h4"/></symbol>
+  <symbol id="i-producao" viewBox="0 0 24 24"><path d="M12 21a5 5 0 0 0 5-5c0-4.2-5-5.6-5-11-2.5 3.5-5 6-5 11a5 5 0 0 0 5 5z"/></symbol>
+  <symbol id="i-totem" viewBox="0 0 24 24"><rect x="4.5" y="2.5" width="15" height="19" rx="2.6"/><path d="M10.5 18.6h3"/></symbol>
+  <symbol id="i-cardapio" viewBox="0 0 24 24"><path d="M7.6 10.6 12 21.4l4.4-10.8"/><path d="M6.9 10.6h10.2"/><path d="M8.2 10.5a3.9 3.2 0 0 1 7.6 0"/></symbol>
+  <symbol id="i-grafico" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6.5 21V11"/><path d="M11.5 21V4"/><path d="M16.5 21v-6.5"/><path d="M21 21v-9.5"/></symbol>
+  <symbol id="i-ajustes" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M19.6 14.6a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5v.2a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3h.1a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8v.1a1.6 1.6 0 0 0 1.5 1h.2a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></symbol>
+  <symbol id="i-mais" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-menos" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-lixo" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M9.5 7V4.5h5V7"/><path d="M6.2 7l1 13.5h9.6L17.8 7"/><path d="M10.2 11v6M13.8 11v6"/></symbol>
+  <symbol id="i-lapis" viewBox="0 0 24 24"><path d="M4 20.2 4.8 16 16.4 4.4a2 2 0 0 1 2.8 0l.4.4a2 2 0 0 1 0 2.8L8 19.2 4 20.2z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.4l5 5L19.5 6"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-alerta" viewBox="0 0 24 24"><path d="M12 3.4 21.4 20H2.6L12 3.4z"/><path d="M12 9.6v4.2"/><path d="M12 17.2h.01"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.4"/><path d="M12 7.8h.01"/></symbol>
+  <symbol id="i-lista" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
+  <symbol id="i-balanca" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 6 1.6 13.2h4.8L4 6z"/><path d="M20 6l-2.4 7.2h4.8L20 6z"/><path d="M12 4v17"/><path d="M8 21h8"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.4 2"/></symbol>
+  <symbol id="i-sino" viewBox="0 0 24 24"><path d="M18.4 16.4H5.6l1.2-5.6a5.4 5.4 0 0 1 10.4 0l1.2 5.6z"/><path d="M10 19.4a2.2 2.2 0 0 0 4 0"/></symbol>
+  <symbol id="i-teclado" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.4"/><path d="M6.5 9h.01M10 9h.01M13.5 9h.01M17 9h.01M6.5 12.5h.01M10 12.5h.01M13.5 12.5h.01M17 12.5h.01M8 16h8"/></symbol>
+  <symbol id="i-apagar" viewBox="0 0 24 24"><path d="M9 5h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-6-7 6-7z"/><path d="M12 9.5l5 5M17 9.5l-5 5"/></symbol>
+  <symbol id="i-cartao" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.6"/><path d="M2.5 10h19"/><path d="M6 14.6h3.4"/></symbol>
+  <symbol id="i-loja" viewBox="0 0 24 24"><path d="M4 9.5V20a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 20 20V9.5"/><path d="M3 9.5 4.8 4h14.4L21 9.5a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M9.5 21.5v-6h5v6"/></symbol>
+  <symbol id="i-nuvem" viewBox="0 0 24 24"><path d="M7 18.5h10.2a3.8 3.8 0 0 0 .6-7.5 5.6 5.6 0 0 0-10.7-1.4A4 4 0 0 0 7 18.5z"/></symbol>
+  <symbol id="i-aparelho" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.4"/><path d="M10.5 18.6h3"/></symbol>
+  <symbol id="i-pessoa" viewBox="0 0 24 24"><circle cx="12" cy="8.4" r="3.6"/><path d="M5.2 20.4c0-3.6 3-5.6 6.8-5.6s6.8 2 6.8 5.6"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3.5 8.5h3.2l1.5-2.6h7.6l1.5 2.6h3.2a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H3.5A1.5 1.5 0 0 1 2 18.5v-8A1.5 1.5 0 0 1 3.5 8.5z"/><circle cx="12" cy="13.6" r="3.4"/></symbol>
+  <symbol id="i-impressora" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9"/><path d="M7 18H4.5A1.5 1.5 0 0 1 3 16.5v-6A1.5 1.5 0 0 1 4.5 9h15a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H17"/><rect x="7" y="14.5" width="10" height="6" rx="1"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><path d="M13.5 13.5h3v3h-3zM20.5 13.5v3M17.5 20.5h3M13.5 20.5h.5"/></symbol>
+  <symbol id="i-agente" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="12" rx="2"/><path d="M8 20.5h8M12 16.5v4"/><path d="M7 9h4M7 12h7"/></symbol>
+  <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.2 16.2 21 21"/></symbol>
+  <symbol id="i-sino-off" viewBox="0 0 24 24"><path d="M18.4 16.4H5.6l1.2-5.6a5.4 5.4 0 0 1 7.2-4"/><path d="M10 19.4a2.2 2.2 0 0 0 4 0"/><path d="M3.5 3.5l17 17"/></symbol>
+  <symbol id="i-expandir" viewBox="0 0 24 24"><path d="M4 9V4h5"/><path d="M20 9V4h-5"/><path d="M4 15v5h5"/><path d="M20 15v5h-5"/></symbol>
+  <symbol id="i-reduzir" viewBox="0 0 24 24"><path d="M9 4v5H4"/><path d="M15 4v5h5"/><path d="M9 20v-5H4"/><path d="M15 20v-5h5"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.8 12.6a9 9 0 0 1 12.4 0"/><path d="M9.1 16.2a4.4 4.4 0 0 1 5.8 0"/><path d="M12 19.6h.01"/></symbol>
+  <symbol id="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></symbol>
+  <symbol id="i-lua" viewBox="0 0 24 24"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7z"/></symbol>
+</svg>
+
+<div id="casca"></div>
+<div id="modal"></div>
+<div id="avisos"></div>
+
+<!-- bibliotecas guardadas no próprio projeto: a loja pode ficar sem internet -->
+<script src="vendor/qrcode.js"></script>
+<script src="vendor/motion.js"></script>
+<script src="js/agente.js"></script>
+<script src="js/fotos.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/balanca.js"></script>
+<script src="js/tela-balcao.js"></script>
+<script src="js/tela-producao.js"></script>
+<script src="js/tela-cardapio.js"></script>
+<script src="js/tela-gestao.js"></script>
+<script src="js/tela-config.js"></script>
+<script src="js/tela-totem.js"></script>
+<script src="js/tela-acompanhamento.js"></script>
+<script src="js/tela-mesas.js"></script>
+<script src="js/app.js"></script>

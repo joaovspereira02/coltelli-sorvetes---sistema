@@ -146,7 +146,8 @@ function telaAjustes(){
 
         <div class="cartao cartao-pad">
           <span class="rotulo">Agente da loja</span>
-          <h3 class="cartao-tit">${Agente.ligado ? 'Conectado' : 'Não encontrado'}</h3>
+          <h3 class="cartao-tit">${Agente.desatualizado() ? 'Conectado, mas desatualizado' : Agente.ligado ? 'Conectado' : 'Não encontrado'}</h3>
+          ${Agente.desatualizado() ? avisoAgenteVelho() : ''}
           ${Agente.ligado ? `
             <div class="kv"><span>Endereço</span><span class="num">${esc(Agente.estado.base || Agente.base)}</span></div>
             <div class="kv"><span>Balança</span><span style="color:${Agente.temBalanca() ? 'var(--ok)' : 'var(--txt-3)'}">
@@ -209,6 +210,20 @@ function telaAjustes(){
       </div>
     </div>
   </div>`;
+}
+
+/* O agente rodando é de antes da atualização da pasta: precisa reiniciar */
+function avisoAgenteVelho(){
+  return `
+    <div class="aviso-agente">
+      <p>${ic('alerta','sm')} O agente ligado é a versão <b>${esc(Agente.estado.versao || 'antiga')}</b> e o sistema precisa da
+      <b>${Agente.VERSAO_MINIMA}</b>. Os arquivos da pasta foram atualizados com o agente aberto, então ele segue
+      rodando o código antigo — por isso as mesas e outras funções novas respondem erro.</p>
+      <p>No computador do balcão, feche o agente (Ctrl+C na janela dele) e ligue de novo:</p>
+      <code>npm run dev</code>
+      <p class="cartao-txt">Se não achar a janela: <code>pkill -f "agente/servidor.js" &amp;&amp; npm run dev</code>
+      (no Windows, feche o Node pelo Gerenciador de Tarefas). Depois recarregue esta página.</p>
+    </div>`;
 }
 
 /* ---------------- Loja ---------------- */

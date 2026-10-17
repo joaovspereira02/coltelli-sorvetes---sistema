@@ -18,7 +18,7 @@ const pagamentos  = require('./pagamento');
 const { Impressora } = require('./impressora');
 const { paginaMesa, paginaRecusada } = require('./paginas');
 
-const VERSAO = '1.0.0';
+const VERSAO = '1.1.0';   // o sistema avisa quando a tela é mais nova que o agente rodando
 const RAIZ   = path.join(__dirname, '..');
 const ARQUIVO_DADOS = path.join(__dirname, 'dados.json');
 const PASTA_FOTOS   = path.join(__dirname, 'fotos');

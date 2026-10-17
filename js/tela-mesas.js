@@ -35,6 +35,15 @@ function telaMesas(){
       `<button class="btn btn-primario btn-grande" data-act="definir-mesas">${ic('mais')} Definir as mesas</button>`)}</div>`;
   }
 
+  if (erroMesas && (Agente.desatualizado() || /404/.test(erroMesas))){
+    return `<div class="tela-centro">${vazio('alerta', 'O agente precisa ser reiniciado',
+      'O agente ligado no computador do balcão ainda é a versão de antes da atualização e não conhece esta função. Feche o agente e ligue de novo com npm run dev; depois toque em Tentar de novo.',
+      `<div class="vazio-acoes">
+         <button class="btn btn-primario" data-act="recarregar-mesas">Tentar de novo</button>
+         <button class="btn btn-ghost" data-act="ir" data-tela="ajustes">${ic('ajustes')} Ver como reiniciar</button>
+       </div>`)}</div>`;
+  }
+
   if (erroMesas){
     return `<div class="tela-centro">${vazio('alerta', 'Não consegui gerar os códigos das mesas',
       `O agente não respondeu (${erroMesas}). Confira se ele está ligado no computador do balcão.`,
@@ -85,7 +94,12 @@ function telaMesas(){
 }
 
 const acoesMesas = {
-  'recarregar-mesas': () => { erroMesas = null; mesasPublicadas = null; App.render(); },
+  'recarregar-mesas': async () => {
+    erroMesas = null; mesasPublicadas = null; mesasPedidasPara = null;
+    // relê a versão: se o agente foi reiniciado, o aviso some
+    try { Agente.estado = await Agente.api('/api/estado'); } catch(e){ /* segue para a nova tentativa */ }
+    App.render();
+  },
   'definir-mesas': () => {
     const loja = Dados.loja();
     Teclado.abrir({

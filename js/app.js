@@ -95,6 +95,8 @@ const App = {
           </nav>
 
           <div class="trilha-pe">
+            ${Agente.desatualizado() ? `<button class="sinal sinal-alerta" data-act="ir" data-tela="ajustes">
+              ${ic('alerta','sm')} Reinicie o agente</button>` : ''}
             <span class="sinal ${Dados.online ? 'sinal-ok' : ''}">
               ${ic(Dados.fonte === 'agente' ? 'agente' : Dados.fonte === 'nuvem' ? 'nuvem' : 'aparelho','sm')}
               ${Dados.fonte === 'agente' ? 'Agente da loja' : Dados.fonte === 'nuvem' ? 'Sincronizado' : 'Só neste aparelho'}

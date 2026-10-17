@@ -84,6 +84,15 @@
 .sinal::before{ content:''; width:7px; height:7px; border-radius:50%; flex:none;
   background:var(--borda-forte); order:-1; }
 .sinal-ok{ color:var(--txt-2); }
+.sinal-alerta{ border:1px solid var(--aviso-borda); background:var(--aviso-sup); color:var(--aviso); cursor:pointer;
+  font-family:inherit; text-align:left; }
+.sinal-alerta::before{ display:none; }
+.aviso-agente{ display:flex; flex-direction:column; gap:var(--e2); padding:var(--e4); border-radius:var(--r2);
+  background:var(--aviso-sup); border:1px solid var(--aviso-borda); color:var(--txt); font-size:var(--t-sm); line-height:1.5; }
+.aviso-agente .icon{ color:var(--aviso); vertical-align:-3px; margin-right:var(--e1); }
+.aviso-agente code{ font-family:var(--mono); font-size:var(--t-sm); background:var(--sup); border:1px solid var(--borda);
+  border-radius:var(--r1); padding:var(--e1) var(--e2); align-self:flex-start; }
+.aviso-agente .cartao-txt code{ align-self:auto; }
 .sinal-ok::before{ background:var(--ok); box-shadow:0 0 0 3px var(--ok-sup); animation:pulsa 2.4s var(--ease-io) infinite; }
 @keyframes pulsa{ 0%,100%{ box-shadow:0 0 0 3px var(--ok-sup) } 50%{ box-shadow:0 0 0 6px transparent } }
 

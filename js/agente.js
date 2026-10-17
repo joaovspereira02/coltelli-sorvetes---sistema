@@ -21,6 +21,17 @@ const Agente = {
   temTerminal(){
     return !!(this.ligado && this.estado && this.estado.terminal.pronto && this.estado.terminal.provedor !== 'manual');
   },
+  /* O agente lê os arquivos da tela do disco a cada acesso, mas o próprio código fica
+     na memória até ser reiniciado. Atualizar a pasta com o agente ligado deixa a tela
+     nova falando com o servidor velho — e rotas novas respondem 404. */
+  VERSAO_MINIMA: '1.1.0',
+  desatualizado(){
+    if (!this.ligado || !this.estado) return false;
+    const n = (v) => String(v || '0').split('.').map(x => parseInt(x, 10) || 0);
+    const [a, b] = [n(this.estado.versao), n(this.VERSAO_MINIMA)];
+    for (let i = 0; i < 3; i++){ if ((a[i] || 0) !== (b[i] || 0)) return (a[i] || 0) < (b[i] || 0); }
+    return false;
+  },
   temImpressora(){
     return !!(this.ligado && this.estado && this.estado.impressora && this.estado.impressora.pronta);
   },

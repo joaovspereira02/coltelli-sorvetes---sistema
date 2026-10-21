@@ -145,6 +145,6 @@ function qrSvg(texto, px = 150){
       }
     }
     return `<svg class="qr" viewBox="0 0 ${px} ${px}" width="${px}" height="${px}" role="img" aria-label="QR Code para acompanhar o pedido">
-      <rect width="${px}" height="${px}" fill="#FFFFFF"></rect><path d="${d}" fill="#0F3571"></path></svg>`;
+      <rect width="${px}" height="${px}" fill="#FFFFFF"></rect><path d="${d}" fill="#000000"></path></svg>`;
   } catch(e){ return ''; }
 }

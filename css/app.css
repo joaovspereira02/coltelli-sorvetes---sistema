@@ -679,6 +679,8 @@
 }
 .qr-caixa.grande{ padding:var(--e5); }
 .qr-caixa .qr{ display:block; border-radius:6px; }
+/* QR sempre preto no branco, na tela e no papel: é o contraste que todo leitor entende */
+.qr{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 .qr-txt{ font-size:var(--t-xs); color:#41506E; text-align:center; line-height:1.4; }
 
 .terminal-cena{
